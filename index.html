@@ -22,12 +22,35 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
+            padding-bottom: 100px;
         }
         section {
             background-color: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
         }
         footer {
             text-align: center;
@@ -47,7 +70,46 @@
     <main>
         <section>
             <h2>About</h2>
-            <p>This is a simple demonstration page.</p>
+            <p>This is a simple demonstration page that showcases various features and projects.</p>
+        </section>
+        
+        <section>
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>Works great on all devices</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Modern Layout</h3>
+                    <p>Clean and organized structure</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fast Loading</h3>
+                    <p>Optimized for performance</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A sample project showcasing web development skills.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Another exciting project demonstrating creativity.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Web Dev Street, Internet City, 12345</p>
         </section>
     </main>
     <footer>
